@@ -1,31 +1,75 @@
 .box {
+    height: 200px;
+    margin: 5px;
+    width: 100%;;
 }
 
-.green-box {
+.green-box{
+    width: 99%;
+    height: 100px;
+    background-color: #00bb00;  
 }
 
 .blue-box {
+    width: calc(100% / 3 - 10px);
+    display: inline-block;
+    height: 300px;
+    background-color: #0099ff;
 }
 
 .grey-box {
+    width: calc(100% / 4 - 10px);
+    height: 200px;
+    background-color: #c9c9c9;
+    display: inline-block; 
 }
 
 /*** Media Queries Below ***/
 
-@media (min-width: 600px) {
-    .green-box {
+@media (max-width: 600px) {
+    .green-box{
+        width: 100%;
+        height: 100px;
+        background-color: #00bb00;  
     }
+    
     .blue-box {
+        width: 100%;
+        display: block;
+        height: 150px;
+        background-color: #0099ff;
     }
+    
     .grey-box {
+        width: 100%;
+        height: 75px;
+        background-color: #c9c9c9;
+        display: block;
     }
 }
 
-@media (min-width: 900px) {
-    .green-box {
+@media (min-width: 600px) and (max-width:900px){
+    .green-box{
+        width: 98.5%;
+        height: 100px;
+        background-color: #00bb00;  
     }
+    
     .blue-box {
+        width: 98.5%;
+        display: block;
+        height: 150px;
+        background-color: #0099ff;
     }
+    
     .grey-box {
+        width: calc(100% / 4 - 11px); 
+        height: 200px;
+        background-color: #c9c9c9;
+        display: inline-block;
     }
 }
+
+
+/* Missing css */
+

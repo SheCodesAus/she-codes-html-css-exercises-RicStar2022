@@ -30,3 +30,47 @@ div {
 }
 
 /*** Your code here ***/
+
+@media (min-width: 500px){
+    div {
+        display:inline-block;
+        width:44%;
+    }
+}
+
+@media (min-width: 700px) {
+    div {
+        display:inline-block;
+        background-color: white;
+        width: 40%;
+        font-family: "comic sans ms";
+        font-size: 50px;
+    }
+
+    #div-1,
+    #div-2 {
+        background-color: #9370db;
+    }
+
+    #div-3,
+    #div-4 {
+        background-color: #6495ed;
+    }
+}
+
+@media (min-width: 900px){
+    div {
+        display:inline-block;
+        background-color: white;
+        width: 20%;
+        font-family: "courier new";
+        font-size: 100px;
+    }
+
+     #div-2,#div-3,#div-4 {
+        background-color: #9370db;
+    }
+
+
+
+}

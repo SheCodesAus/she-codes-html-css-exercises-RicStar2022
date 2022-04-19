@@ -1,44 +1,45 @@
-
 html {
+    background: #f7f7f7;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#ffffff
 }
 
 body {
-    background-color: #f4f4f4;
+    margin: 0;
 }
+
+
+
+/* Header styles */
 
 header {
-    background-color: #ffffff;
+    background-color: #fff;
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid #e9e6e6;
+    height: 70px;
+    padding: 0 5px;
+    /* border: 3px solid red;  */
 }
-
-head {
-    background-color: #ffffff;
-}
-
-h1 nav {
-    display: inline;
-}
-
 h1 {
-    width: 40%;
-    color: red;
+    color:  #C70039;
+    float: left;
+    padding-top: 10px;
 }
 
-h2 {
-    color: black;
+nav, h1 {
+    display: inline;
+    
 }
 
 nav {
-    text-transform:uppercase;
-    color: grey;
-    width: 60%;
-    height: 100%;
+    /* height: 100%; */
     float: right;
-    text-decoration: underline;
-    text-decoration-color: #c70039;
-    color:#c70039
-    border-left: solid 2px #f4f4f4;
+    padding-top: 45px;
+}
+
+nav a {
+    text-transform: uppercase;
+    border-left: solid 2px #f7f7f7;
+    padding: 0 5px 0 5px;
 }
 
 nav a:hover {
@@ -46,72 +47,78 @@ nav a:hover {
     color: #f4f4f4;
 }
 
-/*  Card Items  */
-
-.column {
-    float: left;
-    width: 31%;
-    padding: 0 10px;
-    display: inline-block;
+.selected {
+    text-decoration: underline;
+    text-decoration-color: #C70039;
+    color: #C70039;
+}
+section {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
 }
 
-.row {
-   margin: 30px;
-   width: 100%;
-}
-
-.row:after {
-    content:"";
-    display: table;
-    clear: both;
-}
-
-/* .card { 
-    padding: 16px;
-    text-align: left;
-    background-color:#ffffff;
-}*/
-
-/*.img-item {
-    width:100%;
-    height: 300px;
-}*/
-
-.tag-line {
-
+h2 {
+    text-align: center;
 }
 
 a img {
-    height: 20px;
+    height: 15px;
     width: auto;
     display: inline;
     vertical-align: middle;
 }
 
-h4 {
-    text-transform: uppercase;
+h3 {
+    display: inline;
+    padding-top: 25px;
 }
 
-.selected{
-    text-decoration: underline;
-    text-decoration-color: #c70039;
-    color:#c70039
+h4 {
+    text-transform: uppercase;
+    color:#C70039;
+}
+
+.sub-card-heading {
+    color:lightgrey;
+}
+
+/* Card Styles */
+.card-deck{
+    margin: auto;
+    width: 100%;
+    padding-left: 80px;
 }
 
 .card {
-    border: 3px dotted purple;
+    /* border: 3px dotted purple; */
     width: 26%;
-    padding:10px;
+    padding: 10px;
     display: inline-block;
+    /* vertical-align: middle; */
     margin: 0 5px 20px;
-    height: 375%;
-    align-items: left;
-    box-shadow: 0 0 10px blue;
-    background-color: #ffffff;
+    height: 350px;
+    text-align: left;
+    box-shadow: 0px 0px 10px darkgrey;
+    background-color: #fff;
 }
 
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    padding-bottom:20px;
+
 }
+
+.card h2 {
+    display: inline-block;
+}
+
+footer {
+    background-color: #fff;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
